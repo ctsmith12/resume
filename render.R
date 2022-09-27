@@ -1,9 +1,9 @@
 # This script builds both the HTML and PDF versions of your CV
 
 # declare param inputs to render
-sheet_ss_id <-  "1JLnOdTkLmNy7c08_61NGYS2AlOt5fgqfPGmnKRW0pdM"
-online_link <- "https://jtgregoire93.github.io/resume/"
-pdf_location <- "https://github.com/jtgregoire93/resume/raw/main/resume.pdf"
+sheet_ss_id <-  "11a0k5JRCjy0wSU3iNGDKU6tK2hjWH4AZwHJoegGSUME"
+online_link <- "https://ctsmith12.github.io/resume/"
+pdf_location <- "https://github.com/ctsmith12/resume/raw/main/resume.pdf"
 # Knit the HTML version
 rmarkdown::render("resume.rmd",
                   params = list(pdf_export = FALSE, 

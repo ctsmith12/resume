@@ -1,15 +1,15 @@
 ---
-title: Justin Gregoire's CV
+title: Christopher Smith's CV
 date: "`r Sys.Date()`"
 params: 
   pdf_export: 
     value: TRUE
   sheet_ss_id: 
-    value: "1JLnOdTkLmNy7c08_61NGYS2AlOt5fgqfPGmnKRW0pdM"
+    value: "11a0k5JRCjy0wSU3iNGDKU6tK2hjWH4AZwHJoegGSUME"
   online_link:
-    value: "https://jtgregoire93.github.io/resume"
+    value: "https://ctsmith12.github.io/resume"
   pdf_location: 
-    value: "https://github.com/jtgregoire93/resume/raw/main/resume.pdf"
+    value: "https://github.com/ctsmith12/resume/raw/main/resume.pdf"
 output:
   pagedown::html_resume:
     css: ['css/custom_resume.css', 'css/styles.css', 'resume']
@@ -64,20 +64,18 @@ phone <-
   contact_info %>% filter(loc == 'phone')  %>% select(entry) %>% as.character()
 linkedin <-
   contact_info %>% filter(loc == 'linkedin')  %>% select(entry) %>% as.character()
-github <-
-  contact_info %>% filter(loc == 'github')  %>% select(entry) %>% as.character()
 ```
 
 # Aside
 
-![headshot](https://raw.githubusercontent.com/jtgregoire93/resume/main/headshot.png){width="90%"}
+![headshot](headshot.png)
 
 ### Contact {#contact}
 
 -   <i class="fa fa-map-marker"></i> `r location`
--   <i class="fa fa-envelope"></i> [`r email`](`r hyperlink(paste0("mailto:",email))`){.email} 
+-   <i class="fa fa-envelope"></i> [`r email`](%60r%20hyperlink(paste0(%22mailto:%22,email))%60){.email}
 -   <i class="fa fa-phone"> </i> `r phone`
--   [Linkedin: <i class="fa fa-linkedin"></i>](`r hyperlink(linkedin)`){target="_blank"} \  |  [Github: <i class='fa fa-github'></i>](`r hyperlink(github)`){target="_blank"}
+-   [Linkedin: <i class="fa fa-linkedin"></i>](https://www.linkedin.com/in/christopher-t-smith/){target="_blank"}
 
 ### Education {data-icon="graduation-cap" data-concise="true"}
 
@@ -122,7 +120,7 @@ if(PDF_EXPORT){
 
 # Main
 
-## Justin Gregoire {#title}
+## Christopher Smith {#title}
 
 ```{r message=FALSE, warning=FALSE}
 cat(paste0(intro_text, sep = "\n"))
